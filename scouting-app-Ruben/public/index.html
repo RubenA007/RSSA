@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Итак, Это Рубен и начну объяснять свой код -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Эта meta, как я понял из интернета нужна для оптимизации на телефон, 
+  Но что-то с @media я еще не делал-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index01.css">
+  <!--Подключение моего css файла-->
+  <style>
+    /* Тут вставляем логотип команды, как задний фон и задаем параметры по размеру
+Чтобы в случае свободного пространства логотип не повторялся
+И позицию логотипа */
+    body {
+      background-image: url('images/Sputnik.jpeg');
+      background-size: 550px 550px;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+  </style>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <!--Я использовал готовые значки для внешнего вида из этой библиотеки-->
+  <title>Sputnik</title>
+  <h1>Sputnik Scouting Assistant</h1>
+  <button class="btn" id="showOverlay" onclick="show()"><i class="fa fa-bars" aria-hidden="true"></i></i></button>
+  <div id="overlay" style="display: none;">
+    <button class="overlayButton" id="Main-button">Main</button>
+    <button class="overlayButton" id="Autonomus-button">Autonomus</button>
+    <button class="overlayButton" id="Teleop-button">Teleop</button>
+    <button class="overlayButton" id="End Game-button">End Game</button>
+    <button class="overlayButton" id="Penalty/information-button">Penalty/informaion</button>
+  </div>
+  <!--Кнопка для отправки данных к Google Apps Script
+Кнопка для ресета всех значений с счетчиков и окон-->
+  <button class="button" id="Reset" onclick="Reset()"><i class="fa fa-history" aria-hidden="true"></i></button>
+  <!--Тут по нажатии на кнопку, которая под объявлением заголовка, появляется еще 5 кнопок, 
+которые позволяют перемещаться между "разделами"(не уверен, что это правильное слово)
+Соотвественно при нажатии сначала появляется список кнопок и при нажатии на них идет перемещение-->
+</head>
+
+<body>
+  <!--Для каждого "раздела" есть свой блок, который в зависимости от нажатой кнопки появится или нет-->
+  <!--Блок Main
+    Я еще подумаю над текстом, но мб стоит и убрать в целом этот блок-->
+  <div id="Main" style="display: none;">
+    <h3>Main</h3>
+    <div id="text ">
+      <p>Итак, это веб-приложение для Скаутинга от команды 12524 Sputnik Original
+        <br>Напишите или скажите мне, чтобы объяснил, как это работает и взаимосвязано
+        <br>Ссылка на таблицу:
+        <br>При возникновении вопросов:
+        <br><i class="fa fa-telegram" aria-hidden="true"></i>: @Ruben_Agasyan
+      </p>
+    </div>
+  </div>
+  <!--Блок Autonomus-->
+
+  <div id="Autonomus" style="display: none;">
+    <h3>Autonomus</h3>
+    <!--Тут уже начинаются счетчики, как можно заметить, 
+            то при нажатии на кнопки происходит вызов функций-->
+    
+    <h2>Parked AS/AT: <span class="counter" id="counter1">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(1)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(1)">-</button>
+    <!-- P.S. Я вкурсе, что h3 идет раньше, чем h2. -->
+    <h2>Parked without Signal Sleeve: <span class="counter" id="counter19">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(19)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(19)">-</button>
+
+    <h2>Parked Signal Sleeve: <span class="counter" id="counter2">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(2)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(2)">-</button>
+
+    <h2> Terminal: <span class="counter" id="counter3">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(3)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(3)">-</button>
+
+    <h2> Ground Junction: <span class="counter" id="counter4">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(4)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(4)">-</button>
+
+    <h2> Low Junction: <span class="counter" id="counter5">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(5)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(5)">-</button>
+
+    <h2> Middle Junction: <span class="counter" id="counter6">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(6)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(6)">-</button>
+
+    <h2> High Junction: <span class="counter" id="counter7">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(7)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(7)">-</button>
+
+  </div>
+  <!--Блок Teleop-->
+
+  <div id="Teleop" style="display: none;">
+    <h3>Teleop</h3>
+
+    <h2> Terminal: <span class="counter" id="counter8">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(8)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(8)">-</button>
+
+    <h2> Ground Junction: <span class="counter" id="counter9">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(9)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(9)">-</button>
+
+    <h2> Low Junction: <span class="counter" id="counter10">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(10)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(10)">-</button>
+
+    <h2> Middle Junction: <span class="counter" id="counter11">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(11)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(11)">-</button>
+
+    <h2> High Junction: <span class="counter" id="counter12">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(12)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(12)">-</button>
+
+  </div>
+  <!--Блок End Game-->
+
+  <div id="End Game" style="display: none;">
+    <h3>End Game</h3>
+
+    <h2> Parked Terminal: <span class="counter" id="counter13">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(13)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(13)">-</button>
+
+    <h2> Completed Circuit: <span class="counter" id="counter14">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(14)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(14)">-</button>
+
+    <h2> Junction Ownership: <span class="counter" id="counter15">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(15)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(15)">-</button>
+
+    <h2> Beacon: <span class="counter" id="counter16">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(16)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(16)">-</button>
+
+  </div>
+  <!--Блок Penalty/infromation
+        Про штрафы понятно, даже писать не буду дальше
+        У меня есть такая идея, чтобы данные, которые вставляются в лист, где обычно в ручную вписываются результаты
+      Сам брал результаты с листа, на который будут приходить эти данные, 
+      а через id код понимал в какую строчку вставоять значения, такое можно сделать через Google Apps вроде 
+    И информация. Как участник Drive Team прошлого сезона, могу сказать, 
+    что нет возможности знать походу соревнований какой робот, что может и какая у них стратегия(если она есть)
+  Поэтому мб скауты могли бы записывать что-то подобное и мы могли бы это учитывать сразу, а не после того,
+как поговорим с командой. Да и перечитывание правил 1-ой части натолкнуло на это-->
+
+  <div id="Penalty/information" style="display: none;">
+    <h3>Penalty/information</h3>
+
+    <h2> Minor: <span class="counter" id="counter17">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(17)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(17)">-</button>
+
+    <h2> Major: <span class="counter" id="counter18">0</span></h2>
+    <button class="button-plus_minus" onclick="incrementCounter(18)">+</button>
+    <button class="button-plus_minus" onclick="decrementCounter(18)">-</button>
+    <p></p>
+    <!--Тут сами окна для записи id и informarion-->
+    <div class="text-field">
+      <form action="#" class="login-form" name="submit-to-google-sheet">
+        <input class="text-field_input" type="id" name="id" id="id" autocomplete="off" placeholder="Enter id">
+<!--cols - ширина, а rows- кол-во строк, это сделано, чтобы при вводе информации был всегда виден текст-->
+        <textarea cols="20" rows="1" class="text-field_input" type="information" name="information" id="information" autocomplete="off"
+          placeholder="Write information"></textarea>
+        
+        
+          <button class="button" type="submit" id="button" onclick="Send()"><i class="fa fa-telegram"
+            aria-hidden="true"></i></button>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+<script>
+  //Тут я я хочу исправить проблему с лишними кликами на телефоне, сначала 1 клик фиксировался, как 2-3 клика
+  var button = document.getElementById('button'); 
+
+  var pressTimer;
+
+  button.addEventListener('mousedown', function () {
+    pressTimer = setTimeout(function () {
+      // Обработчик для длительного нажатия
+      console.log('Длительное нажатие');
+    }, 1000); // Задержка в миллисекундах (здесь 1000 миллисекунд = 1 секунда)
+  });
+
+  button.addEventListener('mouseup', function () {
+    clearTimeout(pressTimer);
+    // Обработчик для обычного нажатия
+    console.log('Обычное нажатие');
+  });
+// Получение ссылки на текстовое поле
+const textField = document.getElementById('information');
+
+// Обработчик события ввода текста
+textField.addEventListener('input', function() {
+// Установка высоты текстового поля в зависимости от его содержимого
+this.style.height = 'auto';
+this.style.height = this.scrollHeight+'px';
+});
+
+</script>
+<script src="https://apis.google.com/js/api.js"></script>
+<!--Для работы счетчиков-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.6.1/tabletop.min.js"></script>
+<script src="../dist/index.js"></script>
+<!--Подключение к js-->
+
+</html>
