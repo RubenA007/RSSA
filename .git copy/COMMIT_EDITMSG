@@ -1,0 +1,39 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	renamed:    scouting-app-Ruben/.gitignore -> RSSA-app/.gitignore
+#	renamed:    scouting-app-Ruben/LICENSE -> RSSA-app/LICENSE
+#	new file:   RSSA-app/README.md
+#	renamed:    scouting-app-Ruben/dist/index.js -> RSSA-app/dist/index.js
+#	renamed:    scouting-app-Ruben/package-lock.json -> RSSA-app/package-lock.json
+#	renamed:    scouting-app-Ruben/package.json -> RSSA-app/package.json
+#	renamed:    scouting-app-Ruben/public/Google Apps Script.txt -> RSSA-app/public/Google Apps Script.txt
+#	renamed:    scouting-app-Ruben/public/images/Duck0.jpeg -> RSSA-app/public/images/Duck0.jpeg
+#	renamed:    scouting-app-Ruben/public/images/Sputnik.jpeg -> RSSA-app/public/images/Sputnik.jpeg
+#	renamed:    scouting-app-Ruben/public/index.html -> RSSA-app/public/index.html
+#	renamed:    scouting-app-Ruben/public/index01.css -> RSSA-app/public/index01.css
+#	renamed:    scouting-app-Ruben/public/robots.txt -> RSSA-app/public/robots.txt
+#	renamed:    scouting-app-Ruben/snowpack.config.mjs -> RSSA-app/snowpack.config.mjs
+#	renamed:    scouting-app-Ruben/src/index.ts -> RSSA-app/src/index.ts
+#	renamed:    scouting-app-Ruben/tsconfig.json -> RSSA-app/tsconfig.json
+#	renamed:    scouting-app-Ruben/types/static.d.ts -> RSSA-app/types/static.d.ts
+#	deleted:    credentials.json
+#	deleted:    fukbvhyj
+#	deleted:    scouting-app-Ruben/README.md
+#	renamed:    first_step/gitignore.txt -> "\320\237\321\200\320\270\320\274\320\265\321\200 \320\267\320\260\320\277\320\270\321\201\320\270/.gitignore"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \320\267\320\260\320\277\320\270\321\201\320\270/__main__.py"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \320\267\320\260\320\277\320\270\321\201\320\270/readme.md"
+#	renamed:    first_step/req.txt -> "\320\237\321\200\320\270\320\274\320\265\321\200 \320\267\320\260\320\277\320\270\321\201\320\270/req.txt"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \321\207\321\202\320\265\320\275\320\270\321\217/.gitignore"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \321\207\321\202\320\265\320\275\320\270\321\217/__main__.py"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \321\207\321\202\320\265\320\275\320\270\321\217/readme.md"
+#	new file:   "\320\237\321\200\320\270\320\274\320\265\321\200 \321\207\321\202\320\265\320\275\320\270\321\217/req.txt"
+#	renamed:    first_step/__main__.py -> "\320\241\321\202\320\260\321\200\321\213\320\265 \320\262\320\260\321\200\320\270\320\260\320\275\321\202\321\213/__main__.py"
+#	new file:   "\320\241\321\202\320\260\321\200\321\213\320\265 \320\262\320\260\321\200\320\270\320\260\320\275\321\202\321\213/gitignore.txt"
+#	renamed:    quickstart.py -> "\320\241\321\202\320\260\321\200\321\213\320\265 \320\262\320\260\321\200\320\270\320\260\320\275\321\202\321\213/quickstart.py"
+#	new file:   "\320\241\321\202\320\260\321\200\321\213\320\265 \320\262\320\260\321\200\320\270\320\260\320\275\321\202\321\213/req.txt"
+#	renamed:    first_step/rssa-425916-9d765b802316.json -> "\320\241\321\202\320\260\321\200\321\213\320\265 \320\262\320\260\321\200\320\270\320\260\320\275\321\202\321\213/rssa-425916-9d765b802316.json"
+#
