@@ -32,9 +32,9 @@ sheet_id = "1HYHpniPx60_yzt224M_S_ybWOta--9AsYRYAKhF_MHI"
 # https://developers.google.com/resources/api-libraries/documentation/sheets/v4/python/latest/sheets_v4.spreadsheets.html
 
 def get_values():
-    values = [[randrange(10, 99)]]
+    #values = [[randrange(10, 99)]]
     # values = [[randrange(10, 99) for _ in range(0, 6)]]
-    # values = [[randrange(10, 99)] for _ in range(0, 3)]
+    values = [[randrange(10, 99)] for _ in range(0, 3)]
     # values = [[randrange(10, 99) for _ in range(0, 3)] for _ in range(0, 3)]
     return values
 

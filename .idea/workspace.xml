@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8c835a0-f3b4-4f66-a703-24cab21ba39d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RSSA-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример записи/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример записи/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример чтения/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример чтения/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример чтения/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Пример чтения/req.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Старые варианты/gitignore.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Старые варианты/req.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_step/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Старые варианты/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_step/gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Пример записи/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_step/req.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Пример записи/req.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_step/rssa-425916-9d765b802316.json" beforeDir="false" afterPath="$PROJECT_DIR$/Старые варианты/rssa-425916-9d765b802316.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fukbvhyj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quickstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/Старые варианты/quickstart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/Google Apps Script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/Google Apps Script.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/images/Duck0.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/images/Duck0.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/images/Sputnik.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/images/Sputnik.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/index01.css" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/index01.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/snowpack.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/snowpack.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scouting-app-Ruben/types/static.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/RSSA-app/types/static.d.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2iDBToJIAKYyNOh7J3e4qJoXRYO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/PC/Desktop/scouting-app-Ruben"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8c835a0-f3b4-4f66-a703-24cab21ba39d" name="Changes" comment="" />
+      <created>1719015281054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719015281054</updated>
+    </task>
+    <servers />
+  </component>
+</project>
