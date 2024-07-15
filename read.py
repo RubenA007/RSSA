@@ -32,7 +32,7 @@ service = get_service_sacc()
 sheet = service.spreadsheets()
 
 # https://docs.google.com/spreadsheets/d/xxx/edit#gid=0
-sheet_id = "1HYHpniPx60_yzt224M_S_ybWOta--9AsYRYAKhF_MHI"
+sheet_id = "xxx"
 
 # https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/get
 # resp = sheet.values().get(spreadsheetId=sheet_id, range="Лист1!A1:A999").execute()
